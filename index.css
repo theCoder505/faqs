@@ -9,6 +9,7 @@ html, body {
     padding: 0;
     height: 100%;
     overflow: hidden;
+      -webkit-overflow-scrolling: touch;
 }
 
 body > div {
@@ -20,7 +21,7 @@ body > div {
     
     width: 100%;
     height: CALC(100% + 1px);
-    
+      -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     overflow-y: auto;
 }
