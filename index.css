@@ -5,20 +5,25 @@
 }
 
 html, body {
-    height: 100%;
- }
-
- body {
-/*     position: fixed; */
     margin: 0;
     padding: 0;
-    border: 0;
-    outline: 0;
-    background: 0 0;
-        -webkit-overflow-scrolling: touch;
-    overflow-x: auto;
-    overflow-y: scroll;
- }
+    height: 100%;
+    overflow: hidden;
+}
+
+body > div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    box-sizing: border-box;
+    
+    width: 100%;
+    height: CALC(100% + 1px);
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 #faq_section {
     min-height: 100vh;
